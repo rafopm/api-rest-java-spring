@@ -1,4 +1,4 @@
-package med.voll.api.medico;
+package med.voll.api.domain.medico;
 
 public enum Especialidad {
 
@@ -6,4 +6,5 @@ public enum Especialidad {
     CARDIOLOGIA,
     GINECOLOGIA,
     OBSTETRICIA,
+    PEDIATRIA,
 }
