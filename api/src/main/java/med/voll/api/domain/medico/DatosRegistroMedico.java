@@ -7,12 +7,12 @@ import jakarta.validation.constraints.Pattern;
 import med.voll.api.domain.direccion.DatosDireccion;
 
 public record DatosRegistroMedico(
-        @NotBlank
+        @NotBlank(message = "{nombre.obligatorio}")
         String nombre,
-        @NotBlank
+        @NotBlank(message = "{email.obligatorio}")
         @Email
         String email,
-        @NotBlank
+        @NotBlank(message = "{phone.obligatorio}")
         String telefono,
         @NotBlank
         @Pattern(regexp = "\\d{4,6}")
